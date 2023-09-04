@@ -15,7 +15,7 @@ function Routess() {
                 <Route element={<Login />} path="/login" />
                 <Route element={<Register />} path="/cadastro" />
 
-                <Route element={<PrivateRoute />}>
+                <Route element={<PrivateRoute isAdmin/>}>
                   
                     <Route element={<Home/>} path="/" />
                     <Route element={<Products/>} path="/produtos" />
